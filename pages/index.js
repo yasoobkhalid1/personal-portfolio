@@ -5,7 +5,7 @@ import Introduction from "../components/Introduction";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <Head>
         {/* Site Metadata */}
         <title>Yasoob Khalid | Software Engineer</title>
@@ -66,8 +66,8 @@ export default function Home() {
         {/* End Font Imports */}
       </Head>
 
-      <div className="">
-        <div className="max-w-6xl mx-auto">
+      <div className="min-h-screen bg-zinc-50/25">
+        <div className="max-w-5xl mx-auto">
           <NavBar />
           <Introduction />
         </div>

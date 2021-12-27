@@ -5,7 +5,7 @@ export default function NavBar() {
   const links = sections.map((section) => {
     return (
       <Link href={"#" + section}>
-        <a className="text-slate-500 hover:text-slate-700 hover:underline hover:underline-offset-4">
+        <a className="text-slate-600 hover:text-rose-400 hover:underline hover:underline-offset-4">
           {section}
         </a>
       </Link>
@@ -19,8 +19,8 @@ export default function NavBar() {
   );
 
   return (
-    <div className="flex justify-between my-8 font-roboto text-lg">
-      <div className="text-slate-500 hover:text-slate-700  hover:underline hover:underline-offset-4">
+    <div className="flex justify-between py-8 font-roboto text-lg">
+      <div className="text-slate-600 hover:text-rose-400  hover:underline hover:underline-offset-4">
         {logo}
       </div>
       <div className="flex space-x-10">{links}</div>

@@ -19,7 +19,7 @@ export default function NavBar() {
   );
 
   return (
-    <div className="flex justify-between my-8 font-roboto ">
+    <div className="flex justify-between my-8 font-roboto text-lg">
       <div className="text-slate-500 hover:text-slate-700  hover:underline hover:underline-offset-4">
         {logo}
       </div>

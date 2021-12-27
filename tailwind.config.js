@@ -11,6 +11,9 @@ module.exports = {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
         roboto: ["Roboto", ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        "cross-pattern": "url('/images/cross-pattern.svg')",
+      },
     },
   },
   plugins: [],

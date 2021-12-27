@@ -1,10 +1,11 @@
 import Head from "next/head";
 
 import NavBar from "../components/NavBar";
+import Introduction from "../components/Introduction";
 
 export default function Home() {
   return (
-    <div className="max-w-4xl mx-auto">
+    <div>
       <Head>
         {/* Site Metadata */}
         <title>Yasoob Khalid | Software Engineer</title>
@@ -65,7 +66,12 @@ export default function Home() {
         {/* End Font Imports */}
       </Head>
 
-      <NavBar />
+      <div className="">
+        <div className="max-w-6xl mx-auto">
+          <NavBar />
+          <Introduction />
+        </div>
+      </div>
     </div>
   );
 }

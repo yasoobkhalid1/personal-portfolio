@@ -42,6 +42,10 @@ npx create-next-app -e with-tailwindcss .
 
 ### Favicon
 
-Why all platforms were supported (used [this](https://realfavicongenerator.net/))
+One of the first task I worked on for my website was creating and implementing a favicon in the head of the document. This was actually much more complicated then I expected due to the various sizes for the favicon and the different platforms the website could be accessed from (there was a need for seperate Touch icons for iOS Safari and the `favicon.ico` file needed different, common dimensions).
+
+To simplify this process, I ended up using this [Favicon Generator](https://realfavicongenerator.net/) which made it extremely easy to upload my image and have all the custom configurations generated automatically that I could store in my `public` folder and paste their `link` elements in the `head` of my main `index.js` file.
+
+By doing the above, I made sure my favicon was correctly configured for all modern browser sizes, Windows tile icons, mobile browsers in both the iOS and Android ecosystems, etc.
 
 ## Future Features

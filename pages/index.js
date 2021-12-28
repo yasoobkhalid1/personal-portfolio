@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import NavBar from "../components/NavBar";
 import Introduction from "../components/Introduction";
+import Education from "../components/Education";
 
 export default function Home() {
   return (
@@ -70,6 +71,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <NavBar />
           <Introduction />
+          <Education />
         </div>
       </div>
     </div>

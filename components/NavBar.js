@@ -5,7 +5,7 @@ export default function NavBar() {
   const links = sections.map((section) => {
     return (
       <Link href={"#" + section}>
-        <a className="text-slate-600 hover:text-rose-400 hover:underline hover:underline-offset-4">
+        <a className="text-slate-600 hover:text-rose-500 hover:underline hover:underline-offset-4">
           {section}
         </a>
       </Link>

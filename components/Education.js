@@ -3,35 +3,32 @@ import { FaUserGraduate } from "react-icons/fa";
 
 export default function Education() {
   return (
-    <div className="grid h-[60vh] grid-rows-4">
-      <div className="row-span-1">
+    <div className="flex h-[40vh] items-center justify-center">
+      <div className="">
         <h2
-          className="flex justify-center text-7xl tracking-tighter font-semibold 
-          drop-shadow-2xl text-transparent bg-clip-text bg-gradient-to-b 
-          from-blue-800 to-blue-600"
+          className="tracking-tighter text-center drop-shadow-2xl text-6xl
+        font-semibold text-transparent bg-clip-text bg-gradient-to-t 
+        from-blue-600 to-blue-800"
         >
           Education
         </h2>
-      </div>
-
-      <div className="row-span-3 flex">
-        <div className="grid grid-cols-3">
-          <div className="col-span-1 drop-shadow-2xl">
-            <Image
-              src="/images/degree-illustration.svg"
-              alt="Illustration of a degree document"
-              width={300}
-              height={300}
-            />
+        <div
+          className="tracking-tight leading-relaxed text-xl font-normal 
+          text-slate-700 drop-shadow-2xl text-center pt-12 px-48 "
+        >
+          <div>
+            For my undergrad, I went to <span>UC Berkeley</span> (Class of '22),
+            where I did my <span>B.A. in CS</span>, graduating{" "}
+            <span>cum laude</span> with a <span>3.85 GPA</span>.
           </div>
-
-          <div className="col-span-2 flex justify-center">
-            <div className="text-xl flex justify-around gap-4">
-              <span className="pt-1">
-                <FaUserGraduate />
-              </span>
-              <span className="underline">UC Berkeley</span>
-            </div>
+          <div>
+            I was a member of Berkeley's <span>EECS Honors Program</span>, where
+            my research was focused on understanding the applications of{" "}
+            <span>Machine Learning for Computer Vision</span> tasks.
+          </div>
+          <div>
+            I'm also a proud laureate of <span>Upsilon Pi Epsilon (UPE)</span>,
+            Berkeley's L&S CS Honors Society.
           </div>
         </div>
       </div>

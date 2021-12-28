@@ -68,7 +68,7 @@ export default function Home() {
       </Head>
 
       <div className="min-h-screen bg-zinc-50/25">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <NavBar />
           <Introduction />
           <Education />

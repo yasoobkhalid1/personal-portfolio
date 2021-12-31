@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
         roboto: ["Roboto", ...defaultTheme.fontFamily.sans],
+        slab: ["Roboto Slab", ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
         "cross-pattern": "url('/images/cross-pattern.svg')",

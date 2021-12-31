@@ -12,6 +12,10 @@ export default function Education() {
         >
           Education
         </h2>
+        <div className="bg-red-500 max-w-md ">
+          <div>UC Berkeley</div>
+          Class of 2022
+        </div>
         <div
           className="tracking-tight leading-relaxed text-xl font-normal 
           text-slate-700 drop-shadow-2xl text-center pt-12 px-48 "

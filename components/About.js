@@ -1,7 +1,4 @@
-import Image from "next/image";
-import { FaUserGraduate } from "react-icons/fa";
-
-export default function Education() {
+export default function About() {
   return (
     <div className="">
       <h2
@@ -9,7 +6,7 @@ export default function Education() {
         font-semibold text-transparent bg-clip-text bg-gradient-to-t 
         from-blue-600 to-blue-800"
       >
-        Education
+        About
       </h2>
       <div className="">
         <div className="shadow-2xl rounded-xl my-24 max-w-md px-12 py-8">

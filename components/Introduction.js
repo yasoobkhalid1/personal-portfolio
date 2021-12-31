@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Introduction() {
   return (
-    <div className="my-36">
+    <div className="my-72 text-center">
       <div className="">
-        <h1 className="tracking-[-0.1em] font-medium text-center drop-shadow-2xl">
-          <span className="text-8xl pr-4">Hi. </span>
+        <h1 className="tracking-[-0.1em] font-medium drop-shadow-2xl">
+          <span className="text-8xl pr-4 leading-normal">Hi. </span>
           <span className="text-8xl">
             I'm{" "}
             <span
@@ -20,17 +20,24 @@ export default function Introduction() {
 
         <div
           className="tracking-tight leading-loose text-xl
-          text-slate-700 drop-shadow-2xl text-center pt-12 px-30"
+          text-slate-700 drop-shadow-2xl pt-8 px-30"
         >
-          I'm a Software Engineer, currently working at{" "}
+          I'm a Full Stack Software Engineer, currently working on{" "}
+          <span
+            className="underline underline-offset-4 decoration-2 
+          font-medium decoration-red-600"
+          >
+            Youtube
+          </span>{" "}
+          at{" "}
           <span
             className="underline underline-offset-4 decoration-2 
           font-medium decoration-blue-500"
           >
             Google
-          </span>
+          </span>{" "}
           . <br />
-          Previously, I interned at{" "}
+          Previously, I have interned at{" "}
           <span
             className="underline underline-offset-4 decoration-2 
           font-medium decoration-emerald-500"
@@ -44,7 +51,9 @@ export default function Introduction() {
           >
             Walmart Labs
           </span>
-          .
+          . <br />
+          {/* TODO: Fill out contact me button */}
+          Contact Me
         </div>
       </div>
     </div>

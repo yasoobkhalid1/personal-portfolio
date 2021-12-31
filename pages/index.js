@@ -62,7 +62,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@200..900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@200..700&family=Roboto+Mono:wght@200..700&display=swap"
           rel="stylesheet"
         />
         {/* End Font Imports */}

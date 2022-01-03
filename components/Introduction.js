@@ -24,14 +24,14 @@ export default function Introduction() {
         >
           I'm a Full Stack Software Engineer, currently working on{" "}
           <span
-            className="underline underline-offset-4 decoration-2 
+            className="underline underline-offset-4 decoration-[3px] 
           font-medium decoration-red-600"
           >
             Youtube
           </span>{" "}
           at{" "}
           <span
-            className="underline underline-offset-4 decoration-2 
+            className="underline underline-offset-4 decoration-[3px] 
           font-medium decoration-blue-500"
           >
             Google
@@ -39,14 +39,14 @@ export default function Introduction() {
           . <br />
           Previously, I have interned at{" "}
           <span
-            className="underline underline-offset-4 decoration-2 
+            className="underline underline-offset-4 decoration-[3px] 
           font-medium decoration-emerald-500"
           >
             RePlate
           </span>{" "}
           and{" "}
           <span
-            className="underline underline-offset-4 decoration-2 
+            className="underline underline-offset-4 decoration-[3px] 
           font-medium decoration-purple-500"
           >
             Walmart Labs

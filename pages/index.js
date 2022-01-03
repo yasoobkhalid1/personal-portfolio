@@ -68,11 +68,12 @@ export default function Home() {
         {/* End Font Imports */}
       </Head>
 
-      <div className="min-h-screen bg-zinc-50/25 font-slab">
+      <div className="min-h-screen bg-zinc-50/25 font-mono">
         <div className="max-w-4xl mx-auto">
           <NavBar />
           <Introduction />
           <About />
+          <Education />
         </div>
       </div>
     </div>

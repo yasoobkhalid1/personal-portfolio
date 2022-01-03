@@ -15,6 +15,9 @@ module.exports = {
       backgroundImage: {
         "cross-pattern": "url('/images/cross-pattern.svg')",
       },
+      listStyleType: {
+        square: "square",
+      },
     },
   },
   plugins: [],

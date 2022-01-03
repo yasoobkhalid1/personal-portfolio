@@ -49,3 +49,7 @@ To simplify this process, I ended up using this [Favicon Generator](https://real
 By doing the above, I made sure my favicon was correctly configured for all modern browser sizes, Windows tile icons, mobile browsers in both the iOS and Android ecosystems, etc.
 
 ## Future Features
+
+- Stylize navbar
+- Add scroll animations to entire website
+- Add contact me button in intro

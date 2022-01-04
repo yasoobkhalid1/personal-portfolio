@@ -144,11 +144,17 @@ export default function Projects() {
         })}
       </div>
 
-      <Link href={expanded ? "#projects" : ""}>
-        <button className="" onClick={showMore}>
+      <div className="flex justify-center">
+        <a
+          href="#Projects"
+          className="mt-20 border-4 border-black 
+            p-3 px-6 bg-amber-400 hover:bg-white 
+            ease-in duration-200"
+          onClick={showMore}
+        >
           {expanded ? "Show Less" : "Show More"}
-        </button>
-      </Link>
+        </a>
+      </div>
     </div>
   );
 }

@@ -16,7 +16,16 @@ export default function Contact() {
         don't hesitate to reach out. I'll do my best to get back to you as soon
         as possible!
       </div>
-      <div className="mt-16 flex justify-center">Contact Me</div>
+      <div className="flex justify-center">
+        <a
+          href="mailto:yasoobkhalid1@gmail.com"
+          className="mt-20 border-4 border-black 
+            p-3 px-6 bg-pink-400 hover:bg-white 
+            ease-in duration-200"
+        >
+          Contact Me
+        </a>
+      </div>
     </div>
   );
 }

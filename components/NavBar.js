@@ -9,6 +9,7 @@ export default function NavBar() {
     { name: "Projects", link: "#Projects" },
     { name: "Contact", link: "#Contact" },
     { name: "Resume", link: "/documents/Resume.pdf" },
+    { name: "Blog", link: "https://blog.yasoobk.com" },
   ];
   const links = sections.map((section) => {
     return (

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="mt-64">
+    <div className="mt-56 pt-8" id="About">
       <div className="grid grid-cols-3 mt-8">
         <div className="col-span-2 mr-24 leading-relaxed ">
           <div className="pb-2 text-center mb-8 border-b-4 border-black">

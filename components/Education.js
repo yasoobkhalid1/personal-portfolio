@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Education() {
   return (
-    <div className="mt-56">
+    <div className="mt-48 pt-8" id="Education">
       <div className="grid grid-cols-3 mt-8">
         <div className="col-span-1 pt-32">
           <div

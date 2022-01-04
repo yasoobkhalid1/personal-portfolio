@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Experience() {
   return (
-    <div className="mt-56">
+    <div className="mt-48 pt-12" id="Experience">
       <div className="text-center border-b-4 border-black">
         <div
           className="tracking-tight drop-shadow-2xl text-3xl

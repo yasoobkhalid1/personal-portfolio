@@ -2,13 +2,13 @@ import Link from "next/link";
 
 export default function NavBar() {
   const sections = [
-    { name: "Home", link: "/" },
+    { name: "Home", link: "#" },
     { name: "About", link: "#About" },
     { name: "Education", link: "#Education" },
     { name: "Experience", link: "#Experience" },
     { name: "Projects", link: "#Projects" },
     { name: "Contact", link: "#Contact" },
-    { name: "Resume", link: "#Resume" },
+    { name: "Resume", link: "/documents/Resume.pdf" },
   ];
   const links = sections.map((section) => {
     return (
@@ -16,7 +16,7 @@ export default function NavBar() {
         <a
           className="group-hover:opacity-50 group-hover:hover:opacity-100 
           ease-in duration-100 relative before:absolute before:w-0 before:h-1 
-          before:-bottom-1 before:left-0 before:bg-red-500 before:invisible 
+          before:-bottom-1 before:left-0 before:bg-rose-500 before:invisible 
           before:transition-all before:delay-100 before:ease-in-out
           before:hover:visible before:hover:w-full
         "
@@ -27,5 +27,9 @@ export default function NavBar() {
     );
   });
 
-  return <div className="my-8 text-lg flex justify-between group">{links}</div>;
+  return (
+    <div className="my-8 text-lg flex justify-between group tracking-tight">
+      {links}
+    </div>
+  );
 }

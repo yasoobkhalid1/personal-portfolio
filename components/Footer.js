@@ -8,19 +8,38 @@ export default function Footer() {
       <div className="border-b-4 border-black mb-16"></div>
       <div className="grid grid-cols-2">
         <div className="">
-          <div className="text-lg font-semibold">Yasoob Khalid Niazi</div>
+          <div className="text-lg font-semibold bg-rose-500 inline p-2 px-4">
+            Yasoob Khalid Niazi
+          </div>
           <div className="mt-6">
-            <FiGithub className="inline text-4xl bg-rose-500 rounded-lg mr-3 p-[0.4rem]" />
-            <FaLinkedinIn className="inline text-4xl bg-rose-500 rounded-lg mr-3 p-[0.4rem]" />
-            <FiMail className="inline text-4xl bg-rose-500 rounded-lg mr-3 p-[0.4rem]" />
-            <CgFileDocument className="inline text-4xl bg-rose-500 rounded-lg mr-3 p-[0.4rem]" />
+            <FiGithub
+              className="inline text-4xl border-[3px]
+              hover:-translate-y-1 hover:border-rose-600 hover:text-rose-600
+              ease-in duration-150 border-black rounded-lg mr-3 p-[0.4rem]"
+            />
+            <FaLinkedinIn
+              className="inline text-4xl border-[3px]
+              hover:-translate-y-1 hover:border-rose-600 hover:text-rose-600
+              ease-in duration-150 border-black rounded-lg mr-3 p-[0.4rem]"
+            />
+            <FiMail
+              className="inline text-4xl border-[3px]
+              hover:-translate-y-1 hover:border-rose-600 hover:text-rose-600
+              ease-in duration-150 border-black rounded-lg mr-3 p-[0.4rem]"
+            />
+            <CgFileDocument
+              className="inline text-4xl border-[3px]
+              hover:-translate-y-1 hover:border-rose-600 hover:text-rose-600
+              ease-in duration-150 border-black rounded-lg mr-3 p-[0.4rem]"
+            />
           </div>
           <div className="mt-8 text-sm">
             Designed and Built by Yasoob Khalid Niazi. <br />
             Last updated on Jan 4th 2021.
           </div>
           <div className="mt-6 mb-12 text-sm">
-            © 2021-present. All Rights Reserved.
+            <span className="text-xl">©</span> 2021-present. All Rights
+            Reserved.
           </div>
         </div>
         <div className="">

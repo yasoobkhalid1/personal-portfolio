@@ -4,6 +4,8 @@ import NavBar from "../components/NavBar";
 import Introduction from "../components/Introduction";
 import Education from "../components/Education";
 import About from "../components/About";
+import Experience from "../components/Experience";
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -74,6 +76,7 @@ export default function Home() {
           <Introduction />
           <About />
           <Education />
+          <Experience />
         </div>
       </div>
     </div>

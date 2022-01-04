@@ -12,13 +12,13 @@ export default function Education() {
             <Image
               className=""
               src="/images/uni-illustration.svg"
-              alt="Personal image of Yasoob"
+              alt="Logo of UC Berkeley"
               width={500}
               height={500}
             />
           </div>
         </div>
-        <div className="col-span-2 mr-24 leading-relaxed ">
+        <div className="col-span-2 leading-relaxed ">
           <div className="pb-2 text-center mb-8 border-b-4 border-black">
             <div
               className="tracking-tight drop-shadow-2xl text-3xl

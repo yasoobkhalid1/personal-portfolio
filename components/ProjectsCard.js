@@ -34,8 +34,8 @@ export default function ProjectsCard({
       }`}
     >
       <div
-        className="border-4 border-black bg-amber-500
-        opacity-[65%] hover:opacity-100 hover:-translate-y-2 hover:drop-shadow-2xl  
+        className="border-4 border-black 
+        opacity-60 hover:opacity-100 hover:-translate-y-2 hover:drop-shadow-2xl  
         duration-150"
       >
         <div className="m-8 grid grid-rows-5">

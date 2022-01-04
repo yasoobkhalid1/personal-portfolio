@@ -8,7 +8,7 @@ export default function Contact() {
           className="tracking-tight drop-shadow-2xl text-3xl
               font-semibold bg-pink-500 p-2 px-4 inline-block mb-8"
         >
-          Contact
+          Contact Me
         </div>
       </div>
       <div className="mt-16 text-center mx-32">

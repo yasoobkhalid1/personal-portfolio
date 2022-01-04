@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 export default function ProjectsCard({
+  isVisible,
   logo,
   hasGithub,
   githubLink,
@@ -26,27 +27,35 @@ export default function ProjectsCard({
 
   return (
     <div
-      className="basis-[45%] outline outline-black outline-4 bg-amber-500
-    opacity-[65%] hover:opacity-100 hover:-translate-y-2 hover:drop-shadow-2xl  
-    duration-150 "
+      className={`basis-[45%] ${
+        isVisible
+          ? "opacity-100 transition-opacity duration-500 ease-in"
+          : "absolute overflow-hidden h-0 opacity-0 "
+      }`}
     >
-      <div className="m-8 grid grid-rows-5">
-        <div className="row-span-1 flex justify-between items-end ">
-          <div className="text-6xl">{logo}</div>
-          <div className="">
-            {hasGithub ? githubIcon : null}
-            {hasWebsite ? websiteIcon : null}
+      <div
+        className="border-4 border-black bg-amber-500
+        opacity-[65%] hover:opacity-100 hover:-translate-y-2 hover:drop-shadow-2xl  
+        duration-150"
+      >
+        <div className="m-8 grid grid-rows-5">
+          <div className="row-span-1 flex justify-between items-end ">
+            <div className="text-6xl">{logo}</div>
+            <div className="">
+              {hasGithub ? githubIcon : null}
+              {hasWebsite ? websiteIcon : null}
+            </div>
           </div>
-        </div>
-        <div className="row-span-2 mt-6">
-          <div className="font-semibold text-lg ">{title}</div>
-          <div className="flex justify-start items-center gap-4 mt-4">
-            {skills.map((skill) => {
-              return <div className="">{skill}</div>;
-            })}
+          <div className="row-span-2 mt-6">
+            <div className="font-semibold text-lg ">{title}</div>
+            <div className="flex justify-start items-center gap-4 mt-4">
+              {skills.map((skill) => {
+                return <div className="">{skill}</div>;
+              })}
+            </div>
           </div>
+          <div className="row-span-2 my-4 text-justify">{description}</div>
         </div>
-        <div className="row-span-2 my-4 text-justify">{description}</div>
       </div>
     </div>
   );

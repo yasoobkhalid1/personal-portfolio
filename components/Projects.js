@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import ProjectsCard from "./ProjectsCard";
 import { GrSystem } from "react-icons/gr";
 import React, { useState } from "react";
@@ -6,6 +7,7 @@ import React, { useState } from "react";
 export default function Projects() {
   const projects = [
     {
+      isVisible: true,
       logo: <GrSystem />,
       hasGithub: true,
       githubLink: "https://www.github.com",
@@ -17,6 +19,7 @@ export default function Projects() {
       skills: ["React", "JS", "FireBase"],
     },
     {
+      isVisible: true,
       logo: <GrSystem />,
       hasGithub: true,
       githubLink: "https://www.github.com",
@@ -28,6 +31,7 @@ export default function Projects() {
       skills: ["React", "JS", "FireBase"],
     },
     {
+      isVisible: true,
       logo: <GrSystem />,
       hasGithub: true,
       githubLink: "https://www.github.com",
@@ -39,6 +43,7 @@ export default function Projects() {
       skills: ["React", "JS", "FireBase"],
     },
     {
+      isVisible: true,
       logo: <GrSystem />,
       hasGithub: true,
       githubLink: "https://www.github.com",
@@ -111,9 +116,12 @@ export default function Projects() {
   const [cardsToShow, setCardsToShow] = useState(initialCardsToShow);
 
   const showMore = () => {
-    cardsToShow === initialCardsToShow
-      ? (setCardsToShow(projects.length), setExpanded(true))
-      : (setCardsToShow(initialCardsToShow), setExpanded(false));
+    expanded
+      ? (setExpanded(false),
+        projects.map((project) => {
+          project.isVisible = true;
+        }))
+      : setExpanded(true);
   };
 
   return (
@@ -122,19 +130,25 @@ export default function Projects() {
         <div
           className="tracking-tight drop-shadow-2xl text-3xl
               font-semibold bg-amber-500 p-2 px-4 inline-block mb-8"
+          id="projects"
         >
           Personal Projects
         </div>
       </div>
       <div className="mt-16 flex flex-wrap justify-center gap-8">
-        {projects.slice(0, cardsToShow).map((project) => {
-          return <ProjectsCard {...project} />;
+        {projects.map((project) => {
+          const { isVisible, ...otherProps } = { ...project };
+          return (
+            <ProjectsCard {...otherProps} isVisible={isVisible || expanded} />
+          );
         })}
       </div>
 
-      <button className="ease-linear delay-1000" onClick={showMore}>
-        {expanded ? "Show Less" : "Show More"}
-      </button>
+      <Link href={expanded ? "#projects" : ""}>
+        <button className="" onClick={showMore}>
+          {expanded ? "Show Less" : "Show More"}
+        </button>
+      </Link>
     </div>
   );
 }

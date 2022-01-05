@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <div className="mt-48 pt-12" id="Contact">
+    <div className="mt-48 pt-12 mx-12 lg:mx-0" id="Contact">
       <div
         className="text-center border-b-4 border-black
         dark:border-pink-500"
@@ -15,7 +15,7 @@ export default function Contact() {
           Contact Me
         </div>
       </div>
-      <div className="mt-16 text-center mx-32 dark:text-slate-200 text-lg">
+      <div className="mt-16 text-center mx-16 lg:mx-32 dark:text-slate-200 text-lg">
         I'm always interested in learning about any new opportunities, so please
         don't hesitate to reach out. I'll do my best to get back to you as soon
         as possible!

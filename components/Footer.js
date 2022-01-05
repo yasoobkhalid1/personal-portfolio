@@ -20,7 +20,7 @@ export default function Footer() {
   ];
 
   return (
-    <div className="mt-56">
+    <div className="mt-56 mb-4 mx-12 lg:mx-0 ">
       <div
         className="border-b-4 border-black 
         mb-16 dark:border-rose-500"
@@ -51,17 +51,19 @@ export default function Footer() {
               );
             })}
           </div>
-          <div className="mt-8 text-sm dark:text-slate-300">
+          <div className="mt-8 text-xs lg:text-sm dark:text-slate-300">
             Designed and Built by Yasoob Khalid Niazi. <br />
             Last updated on Jan 4th 2021.
           </div>
-          <div className="mt-6 mb-12 text-sm dark:text-slate-300">
+          <div className="mt-2 lg:mt-6 mb-8 text-sm dark:text-slate-300">
             <span className="text-xl">©</span> 2021-present. All Rights
             Reserved.
           </div>
         </div>
-        <div className="dark:text-slate-200">
-          <div className="text-lg font-semibold text-center">Navigation</div>
+        <div className="dark:text-slate-200 text-sm lg:text-base">
+          <div className="text-base lg:text-lg font-semibold text-center">
+            Navigation
+          </div>
           <ul className="grid grid-cols-2 mt-8 justify-items-center">
             <div className="col-span-1">
               {sections.slice(0, 3).map((section) => {

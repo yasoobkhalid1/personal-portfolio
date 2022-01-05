@@ -43,15 +43,15 @@ export default function NavBar() {
   return (
     <div
       className="py-8 text-lg flex justify-between items-end group 
-      tracking-tight dark:text-gray-200"
+      tracking-tight dark:text-slate-200"
     >
       {links}
       <button
         onClick={() => setDarkMode(!darkMode)}
         className="text-xl p-1 border-2 border-slate-800 rounded
-        hover:bg-slate-800 hover:text-gray-200 ease-out duration-200
-        dark:border-gray-200  dark:hover:bg-gray-200 
-        dark:hover:text-black dark:ease-out dark:duration-500"
+        hover:bg-slate-800 hover:text-slate-200 ease-out duration-200
+        dark:border-slate-200  dark:hover:bg-slate-200 
+        dark:hover:text-slate-800 dark:ease-out dark:duration-500"
       >
         {darkMode ? <FaRegSun /> : <FaRegMoon />}
       </button>

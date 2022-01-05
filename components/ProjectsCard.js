@@ -15,13 +15,19 @@ export default function ProjectsCard({
 }) {
   const githubIcon = (
     <a href={githubLink} target="_blank">
-      <FiGithub className="inline text-3xl mr-3" />
+      <FiGithub
+        className="inline text-3xl mr-3 hover:-translate-y-1 
+        hover:text-orange-500 ease-in duration-150"
+      />
     </a>
   );
 
   const websiteIcon = (
     <a href={websiteLink} target="_blank">
-      <FiExternalLink className="inline text-3xl" />
+      <FiExternalLink
+        className="inline text-3xl hover:-translate-y-1 
+        hover:text-orange-500 ease-in duration-150"
+      />
     </a>
   );
 

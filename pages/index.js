@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import { InView } from "react-intersection-observer";
 import Head from "next/head";
 
 import NavBar from "../components/NavBar";
@@ -10,6 +12,17 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 export default function Home() {
+  const components = [
+    { component: NavBar, threshold: 0.25, initialOpacity: 1 },
+    { component: Introduction, threshold: 0.25, initialOpacity: 1 },
+    { component: About, threshold: 0.5, initialOpacity: 0 },
+    { component: Education, threshold: 0.25, initialOpacity: 0 },
+    { component: Experience, threshold: 0.25, initialOpacity: 0 },
+    { component: Projects, threshold: 0.25, initialOpacity: 0 },
+    { component: Contact, threshold: 0.25, initialOpacity: 0 },
+    { component: Footer, threshold: 0.25, initialOpacity: 0 },
+  ];
+
   return (
     <div className="">
       <Head>
@@ -74,14 +87,26 @@ export default function Home() {
 
       <div className="min-h-screen bg-zinc-50/25 font-mono">
         <div className="max-w-4xl mx-auto">
-          <NavBar />
-          <Introduction />
-          <About />
-          <Education />
-          <Experience />
-          <Projects />
-          <Contact />
-          <Footer />
+          {components.map((singleComponent) => {
+            return (
+              <InView threshold={singleComponent.threshold}>
+                {({ ref, inView }) => (
+                  <motion.div
+                    ref={ref}
+                    initial={{ opacity: singleComponent.initialOpacity }}
+                    animate={
+                      inView
+                        ? { opacity: 1 }
+                        : { opacity: singleComponent.initialOpacity }
+                    }
+                    transition={{ duration: 0.8 }}
+                  >
+                    <singleComponent.component />
+                  </motion.div>
+                )}
+              </InView>
+            );
+          })}
         </div>
       </div>
     </div>

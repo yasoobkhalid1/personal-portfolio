@@ -53,3 +53,4 @@ By doing the above, I made sure my favicon was correctly configured for all mode
 - Stylize navbar
 - Add scroll animations to entire website
 - Add contact me button in intro
+- Add particle animation background

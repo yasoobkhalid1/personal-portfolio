@@ -9,9 +9,12 @@ export default function SingleExperienceSection({
   jobDescriptions,
 }) {
   return (
-    <div className="grid grid-cols-3 mt-16 ">
+    <div className="grid grid-cols-4 lg:grid-cols-3 mt-16 ">
       <div className="col-span-1">
-        <div className="drop-shadow-xl m-12 mr-16 p-8 contrast-125">
+        <div
+          className="drop-shadow-xl p-4 mr-8 lg:m-12 
+          lg:mr-16 lg:p-8 contrast-125"
+        >
           <Image
             className=""
             src={imgPath}
@@ -22,10 +25,10 @@ export default function SingleExperienceSection({
         </div>
       </div>
       <div
-        className="col-span-2 leading-relaxed 
+        className="col-span-3 lg:col-span-2 leading-relaxed 
         dark:text-slate-200"
       >
-        <p className="mb-2 text-xl font-semibold">
+        <p className="mb-2 text-lg lg:text-xl font-semibold lg:text-left">
           {occupation} @{" "}
           <span
             className="underline decoration-4 underline-offset-4
@@ -35,7 +38,7 @@ export default function SingleExperienceSection({
             {company}
           </span>
         </p>
-        <p className="mb-6 font-semibold">{duration}</p>
+        <p className="mb-6 font-semibold lg:text-left">{duration}</p>
         <ul className="grid grid-cols-12">
           {jobDescriptions.map((jobDescription) => {
             return (

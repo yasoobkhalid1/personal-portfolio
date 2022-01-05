@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Education() {
   return (
-    <div className="mt-48 pt-8" id="Education">
+    <div className="mt-48 pt-8 mx-12 lg:mx-0" id="Education">
       <div className="grid grid-cols-3 mt-8">
-        <div className="col-span-1 pt-32">
-          <div className="w-48 drop-shadow-xl dark:hidden">
+        <div className="col-span-1 pt-56 lg:pt-32">
+          <div className="w-36 lg:w-48 drop-shadow-xl dark:hidden">
             <Image
               className=""
               src="/images/uni-illustration.svg"

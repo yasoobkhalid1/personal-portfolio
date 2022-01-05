@@ -41,7 +41,7 @@ export default function Experience() {
   ];
 
   return (
-    <div className="mt-48 pt-12" id="Experience">
+    <div className="mt-48 pt-12 mx-12 lg:mx-0" id="Experience">
       <div
         className="text-center border-b-4 border-black
         dark:border-green-400"

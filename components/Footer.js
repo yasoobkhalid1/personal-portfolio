@@ -20,7 +20,7 @@ export default function Footer() {
   ];
 
   return (
-    <div className="mt-56 mb-4 mx-12 lg:mx-0 ">
+    <div className="mt-56 pb-4 mx-12 lg:mx-0 ">
       <div
         className="border-b-4 border-black 
         mb-16 dark:border-rose-500"

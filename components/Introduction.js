@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function Introduction() {
   return (
-    <div className="my-72 text-center font-slab">
+    <div className="my-56 lg:my-72 text-center font-slab">
       <div className="">
         <h1
-          className="tracking-[-0.1em] font-medium drop-shadow-2xl 
-          dark:text-slate-100"
+          className="tracking-tight font-medium drop-shadow-2xl 
+          dark:text-slate-100 text-7xl lg:text-8xl"
         >
-          <span className="text-8xl pr-4 leading-normal">Hi. </span>
-          <span className="text-8xl">
+          <span className=" pr-4 leading-normal">Hi. </span>
+          <span className="">
             I'm{" "}
             <span
               className="font-semibold bg-rose-500 px-8
@@ -22,9 +22,9 @@ export default function Introduction() {
         </h1>
 
         <div
-          className="leading-loose text-xl
-          text-slate-700 drop-shadow-2xl pt-8 px-30
-          dark:text-slate-200"
+          className="text-slate-700 drop-shadow-2xl pt-8 
+          dark:text-slate-200 lg:leading-loose lg:text-xl 
+          px-30 leading-loose"
         >
           I'm a Full Stack Software Engineer, currently working on{" "}
           <span
@@ -56,7 +56,7 @@ export default function Introduction() {
         <div className="flex justify-evenly">
           <a
             href="mailto:yasoobkhalid1@gmail.com"
-            className="mt-36 font-mono text-2xl border-4 border-black 
+            className="mt-36 font-mono lg:text-2xl border-4 border-black 
             inline-block p-3 px-6 bg-amber-400 hover:bg-white 
             ease-in duration-200 dark:border-amber-400 
             dark:text-amber-400 dark:bg-slate-900 
@@ -66,7 +66,7 @@ export default function Introduction() {
           </a>
           <a
             href="/documents/Resume.pdf"
-            className="mt-36 font-mono text-2xl border-4 border-black 
+            className="mt-36 font-mono lg:text-2xl border-4 border-black 
             inline-block p-3 px-6 bg-emerald-400 hover:bg-white 
             ease-in duration-200 dark:border-emerald-300 
             dark:text-emerald-300 dark:bg-slate-900 

@@ -42,7 +42,7 @@ export default function NavBar() {
 
   return (
     <div
-      className="py-8 text-lg flex justify-between items-end group 
+      className="py-8 md:px-8 lg:px-0 lg:text-lg flex justify-between items-end group 
       tracking-tight dark:text-slate-200"
     >
       {links}

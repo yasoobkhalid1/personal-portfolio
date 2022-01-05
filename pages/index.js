@@ -86,10 +86,10 @@ export default function Home() {
       </Head>
 
       <div
-        className="min-h-screen bg-zinc-50/25 dark:bg-slate-900 
+        className="min-h-screen dark:bg-slate-900 
         ease-out duration-300 font-mono"
       >
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl lg:max-w-4xl mx-auto">
           {components.map((singleComponent) => {
             return (
               <InView threshold={singleComponent.threshold}>

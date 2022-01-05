@@ -55,7 +55,7 @@ export default function Footer() {
             Designed and Built by Yasoob Khalid Niazi. <br />
             Last updated on Jan 4th 2021.
           </div>
-          <div className="mt-2 lg:mt-6 mb-8 text-sm dark:text-slate-300">
+          <div className="mt-2 lg:mt-6 pb-8 text-sm dark:text-slate-300">
             <span className="text-xl">©</span> 2021-present. All Rights
             Reserved.
           </div>

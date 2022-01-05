@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { FaRegMoon, FaRegSun } from "react-icons/fa";
 
 export default function NavBar() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     if (darkMode) {

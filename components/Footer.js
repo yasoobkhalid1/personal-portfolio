@@ -21,10 +21,17 @@ export default function Footer() {
 
   return (
     <div className="mt-56">
-      <div className="border-b-4 border-black mb-16"></div>
+      <div
+        className="border-b-4 border-black 
+        mb-16 dark:border-rose-500"
+      ></div>
       <div className="grid grid-cols-2">
         <div className="">
-          <div className="text-lg font-semibold bg-rose-500 inline p-2 px-4">
+          <div
+            className="text-lg font-semibold bg-rose-500 inline p-2 
+            px-4 dark:font-normal dark:border-4 dark:border-rose-500 
+            dark:text-rose-500 dark:bg-slate-900"
+          >
             Yasoob Khalid Niazi
           </div>
           <div className="mt-6">
@@ -35,23 +42,25 @@ export default function Footer() {
                     <singleIcon.icon
                       className="inline text-4xl border-[3px]
                       hover:-translate-y-1 hover:border-rose-600 hover:text-rose-600
-                      ease-in duration-150 border-black rounded-lg mr-3 p-[0.4rem]"
+                      ease-in duration-150 border-black rounded-lg mr-3 p-[0.4rem]
+                      dark:border-rose-500 dark:text-rose-500 dark:hover:border-rose-600 
+                      dark:hover:text-rose-600"
                     />
                   </a>
                 </>
               );
             })}
           </div>
-          <div className="mt-8 text-sm">
+          <div className="mt-8 text-sm dark:text-slate-300">
             Designed and Built by Yasoob Khalid Niazi. <br />
             Last updated on Jan 4th 2021.
           </div>
-          <div className="mt-6 mb-12 text-sm">
+          <div className="mt-6 mb-12 text-sm dark:text-slate-300">
             <span className="text-xl">©</span> 2021-present. All Rights
             Reserved.
           </div>
         </div>
-        <div className="">
+        <div className="dark:text-slate-200">
           <div className="text-lg font-semibold text-center">Navigation</div>
           <ul className="grid grid-cols-2 mt-8 justify-items-center">
             <div className="col-span-1">
@@ -62,8 +71,8 @@ export default function Footer() {
                       <li
                         className="mt-1 hover:-translate-y-1 hover:underline
                         hover:underline-rose-600 hover:decoration-[3px] 
-                        hover:underline-offset-4 hover:text-rose-600 ease-in 
-                        duration-150 rounded-lg"
+                        hover:underline-offset-[6px] hover:text-rose-600 ease-in 
+                        duration-150 rounded-lg "
                       >
                         {section.name}
                       </li>
@@ -80,7 +89,7 @@ export default function Footer() {
                       <li
                         className="mt-1 hover:-translate-y-1 hover:underline
                         hover:underline-rose-600 hover:decoration-[3px] 
-                        hover:underline-offset-4 hover:text-rose-600 ease-in 
+                        hover:underline-offset-[6px] hover:text-rose-600 ease-in 
                         duration-150 rounded-lg"
                       >
                         {section.name}

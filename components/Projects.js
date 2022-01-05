@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import ProjectsCard from "./ProjectsCard";
 import { GrSystem } from "react-icons/gr";
 import React, { useState } from "react";
@@ -125,7 +123,7 @@ export default function Projects() {
   };
 
   return (
-    <div className="mt-48 pt-12" id="Projects">
+    <div className="mt-48 pt-12 mx-12 lg:mx-0" id="Projects">
       <div
         className="text-center border-b-4 border-black
         dark:border-sky-400"
@@ -138,7 +136,7 @@ export default function Projects() {
           Personal Projects
         </div>
       </div>
-      <div className="mt-16 flex flex-wrap justify-center gap-8">
+      <div className="mt-16 flex flex-wrap justify-center gap-4 lg:gap-8">
         {projects.map((project) => {
           const { isVisible, ...otherProps } = { ...project };
           return (

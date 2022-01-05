@@ -16,50 +16,22 @@ export default function About() {
               About Me
             </div>
           </div>
-          <p className="mb-6 dark:text-slate-200">
-            Hi, I'm{" "}
-            <span
-              className="underline decoration-[3px] underline-offset-[3px] 
-            decoration-rose-500 dark:underline-offset-4 dark:decoration-rose-500"
-            >
-              Yasoob
-            </span>
+          <p className="mb-6 dark:text-slate-200 text-lg">
+            Hi, I'm <span className="text-rose-500 font-semibold ">Yasoob</span>
             , currently located in Mountain View, CA. I recently started my
             career as a new grad Software Engineer at{" "}
-            <span
-              className="underline decoration-[3px] underline-offset-[3px] 
-            decoration-rose-500 dark:underline-offset-4 dark:decoration-rose-500"
-            >
-              Google
-            </span>
-            , where I'm currently working in the{" "}
-            <span
-              className="underline decoration-[3px] underline-offset-[3px] 
-            decoration-rose-500 dark:underline-offset-4 dark:decoration-rose-500"
-            >
-              Youtube
-            </span>{" "}
+            <span className="text-rose-500 font-semibold ">Google</span>, where
+            I'm currently working in the{" "}
+            <span className="text-rose-500 font-semibold ">Youtube</span>{" "}
             product space.{" "}
           </p>
-          <p className="mb-6 dark:text-slate-200">
+          <p className="mb-6 dark:text-slate-200 text-lg">
             Previously, I have interned as a Software Engineering Intern at{" "}
-            <span
-              className="underline decoration-[3px] underline-offset-[3px] 
-            decoration-rose-500 dark:underline-offset-4 dark:decoration-rose-500"
-            >
-              Walmart Labs
-            </span>{" "}
-            and{" "}
-            <span
-              className="underline decoration-[3px] underline-offset-[3px] 
-            decoration-rose-500 dark:underline-offset-4 dark:decoration-rose-500"
-            >
-              Replate
-            </span>{" "}
-            .
+            <span className="text-rose-500 font-semibold ">Walmart Labs</span>{" "}
+            and <span className="text-rose-500 font-semibold ">Replate</span>.
           </p>
 
-          <p className="mb-6 dark:text-slate-200">
+          <p className="mb-6 dark:text-slate-200 text-lg">
             Here are some of the technologies I've been working with recently:
           </p>
           <ul className="grid grid-cols-2 dark:text-slate-200">

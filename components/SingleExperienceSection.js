@@ -21,12 +21,16 @@ export default function SingleExperienceSection({
           />
         </div>
       </div>
-      <div className="col-span-2 leading-relaxed">
+      <div
+        className="col-span-2 leading-relaxed 
+        dark:text-slate-200"
+      >
         <p className="mb-2 text-xl font-semibold">
           {occupation} @{" "}
           <span
-            className="underline decoration-[3px] underline-offset-4
-            decoration-emerald-500"
+            className="underline decoration-4 underline-offset-4
+            decoration-emerald-500 dark:text-emerald-300 
+            dark:decoration-emerald-300 dark:underline-offset-[6px]"
           >
             {company}
           </span>

@@ -42,10 +42,13 @@ export default function Experience() {
 
   return (
     <div className="mt-48 pt-12" id="Experience">
-      <div className="text-center border-b-4 border-black">
+      <div
+        className="text-center border-b-4 border-black
+        dark:border-slate-200"
+      >
         <div
           className="tracking-tight drop-shadow-2xl text-3xl
-              font-semibold bg-green-400 p-2 px-4 inline-block mb-8"
+          font-semibold bg-green-400 p-2 px-4 inline-block mb-8"
         >
           Experience
         </div>

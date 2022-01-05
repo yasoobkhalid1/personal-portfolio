@@ -36,47 +36,47 @@ export default function Education() {
               Education
             </div>
           </div>
-          <p className="mb-6 dark:text-slate-200">
+          <p className="mb-6 dark:text-slate-200 text-lg">
             I finished my{" "}
             <span
-              className="underline decoration-[3px] underline-offset-[3px]
-            decoration-orange-400 dark:underline-offset-4"
+              className="text-orange-500 font-semibold 
+              dark:text-orange-400"
             >
               B.A. in Computer Science
             </span>{" "}
             a few months ago, graduating{" "}
             <span className="italic">cum laude</span> from{" "}
             <span
-              className="underline decoration-[3px] underline-offset-[3px]
-            decoration-orange-400 dark:underline-offset-4"
+              className="text-orange-500 font-semibold 
+              dark:text-orange-400"
             >
               UC Berkeley
             </span>{" "}
             (Class of 2022) with a{" "}
             <span
-              className="underline decoration-[3px] underline-offset-[3px]
-            decoration-orange-400 dark:underline-offset-4"
+              className="text-orange-500 font-semibold 
+              dark:text-orange-400"
             >
               3.85 GPA
             </span>
             .
           </p>
-          <p className="mb-6 dark:text-slate-200">
+          <p className="mb-6 dark:text-slate-200 text-lg">
             At Berkeley, I had the privilege of being part of the{" "}
             <span
-              className="underline decoration-[3px] underline-offset-[3px]
-            decoration-orange-400 dark:underline-offset-4"
+              className="text-orange-500 font-semibold 
+              dark:text-orange-400"
             >
               EECS Honors Program
             </span>
             , where my research focused on exploring the applications of Machine
             Learning for Computer Vision tasks.
           </p>
-          <p className="mb-6 dark:text-slate-200">
+          <p className="mb-6 dark:text-slate-200 text-lg">
             Moreover, I'm a proud laureate of{" "}
             <span
-              className="underline decoration-[3px] underline-offset-[3px]
-            decoration-orange-400 dark:underline-offset-4"
+              className="text-orange-500 font-semibold 
+              dark:text-orange-400"
             >
               Upsilon Pi Epsilon (UPE)
             </span>

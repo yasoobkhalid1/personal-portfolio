@@ -85,7 +85,10 @@ export default function Home() {
         {/* End Font Imports */}
       </Head>
 
-      <div className="min-h-screen bg-zinc-50/25 font-mono">
+      <div
+        className="min-h-screen bg-zinc-50/25 dark:bg-slate-900 
+        ease-out duration-300 font-mono"
+      >
         <div className="max-w-4xl mx-auto">
           {components.map((singleComponent) => {
             return (

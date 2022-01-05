@@ -79,10 +79,8 @@ export default function About() {
         </div>
         <div className="col-span-1 pt-32">
           <div
-            className="opacity-75 ease-linear duration-150
-              w-56 mb-10 relative before:absolute before:top-2 before:left-4
-              before:w-full before:h-full before:bg-slate-300 dark:before:bg-rose-300
-              hover:opacity-100 "
+            className="w-56 mb-10 relative before:absolute before:top-2 before:left-4
+              before:w-full before:h-full before:bg-slate-200 dark:before:bg-rose-300"
           >
             <Image
               className=""

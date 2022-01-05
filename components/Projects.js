@@ -126,10 +126,13 @@ export default function Projects() {
 
   return (
     <div className="mt-48 pt-12" id="Projects">
-      <div className="text-center border-b-4 border-black">
+      <div
+        className="text-center border-b-4 border-black
+        dark:border-sky-400"
+      >
         <div
           className="tracking-tight drop-shadow-2xl text-3xl
-              font-semibold bg-amber-500 p-2 px-4 inline-block mb-8"
+              font-semibold bg-sky-400 p-2 px-4 inline-block mb-8"
           id="projects"
         >
           Personal Projects
@@ -148,8 +151,10 @@ export default function Projects() {
         <a
           href="#Projects"
           className="mt-20 border-4 border-black 
-            p-3 px-6 bg-amber-400 hover:bg-white 
-            ease-in duration-200"
+            p-3 px-6 bg-sky-400 hover:bg-white 
+            ease-in duration-200 dark:border-sky-400
+            dark:text-sky-400 dark:bg-slate-900
+            dark:hover:bg-sky-400 dark:hover:text-slate-900"
           onClick={showMore}
         >
           {expanded ? "Show Less" : "Show More"}

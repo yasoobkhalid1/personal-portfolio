@@ -44,7 +44,7 @@ export default function Experience() {
     <div className="mt-48 pt-12" id="Experience">
       <div
         className="text-center border-b-4 border-black
-        dark:border-slate-200"
+        dark:border-green-400"
       >
         <div
           className="tracking-tight drop-shadow-2xl text-3xl

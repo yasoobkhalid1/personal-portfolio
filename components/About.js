@@ -7,7 +7,7 @@ export default function About() {
         <div className="col-span-2 mr-24 leading-relaxed ">
           <div
             className="pb-2 text-center mb-8 border-b-4 border-black
-            dark:border-slate-200 dark:text-slate-900"
+            dark:border-rose-500 dark:text-slate-900"
           >
             <div
               className="tracking-tight drop-shadow-2xl text-3xl

@@ -27,7 +27,7 @@ export default function Education() {
         <div className="col-span-2 leading-relaxed ">
           <div
             className="pb-2 text-center mb-8 border-b-4 border-black
-            dark:border-slate-200"
+            dark:border-amber-500"
           >
             <div
               className="tracking-tight drop-shadow-2xl text-3xl

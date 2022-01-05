@@ -16,8 +16,8 @@ export default function ProjectsCard({
   const githubIcon = (
     <a href={githubLink} target="_blank">
       <FiGithub
-        className="inline text-3xl mr-3 hover:-translate-y-1 
-        hover:text-orange-500 ease-in duration-150"
+        className="inline text-3xl mr-3 hover:-translate-y-1
+        hover:text-sky-600 dark:hover:text-black  ease-in duration-150"
       />
     </a>
   );
@@ -25,8 +25,8 @@ export default function ProjectsCard({
   const websiteIcon = (
     <a href={websiteLink} target="_blank">
       <FiExternalLink
-        className="inline text-3xl hover:-translate-y-1 
-        hover:text-orange-500 ease-in duration-150"
+        className="inline text-3xl hover:-translate-y-1
+        hover:text-sky-600 dark:hover:text-black ease-in duration-150"
       />
     </a>
   );
@@ -42,7 +42,7 @@ export default function ProjectsCard({
       <div
         className="border-4 border-black 
         opacity-60 hover:opacity-100 hover:-translate-y-2 hover:drop-shadow-2xl  
-        duration-150"
+        duration-150 dark:opacity-80 dark:hover:opacity-100 dark:bg-sky-400"
       >
         <div className="m-8 grid grid-rows-5">
           <div className="row-span-1 flex justify-between items-end ">

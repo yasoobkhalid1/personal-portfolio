@@ -49,12 +49,12 @@ export default function Introduction() {
             Contact Me
           </a>
           <a
-            href="https://blog.yasoobk.com"
+            href="/documents/Resume.pdf"
             className="mt-36 font-mono text-2xl border-4 border-black 
             inline-block p-3 px-6 bg-emerald-400 hover:bg-white 
             ease-in duration-200"
           >
-            Blog
+            Resume
           </a>
         </div>
       </div>

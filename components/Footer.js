@@ -3,6 +3,22 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
 
 export default function Footer() {
+  const icons = [
+    { icon: FiGithub, link: "https://github.com" },
+    { icon: FaLinkedinIn, link: "https://linkedin.com" },
+    { icon: FiMail, link: "mailto:yasoobkhalid1@gmail.com" },
+    { icon: CgFileDocument, link: "/documents/Resume.pdf" },
+  ];
+
+  const sections = [
+    { name: "Home", link: "#" },
+    { name: "About Me", link: "#About" },
+    { name: "Education", link: "#Education" },
+    { name: "Experience", link: "#Experience" },
+    { name: "Personal Projects", link: "#Projects" },
+    { name: "Contact Me", link: "#Contact" },
+  ];
+
   return (
     <div className="mt-56">
       <div className="border-b-4 border-black mb-16"></div>
@@ -12,26 +28,19 @@ export default function Footer() {
             Yasoob Khalid Niazi
           </div>
           <div className="mt-6">
-            <FiGithub
-              className="inline text-4xl border-[3px]
-              hover:-translate-y-1 hover:border-rose-600 hover:text-rose-600
-              ease-in duration-150 border-black rounded-lg mr-3 p-[0.4rem]"
-            />
-            <FaLinkedinIn
-              className="inline text-4xl border-[3px]
-              hover:-translate-y-1 hover:border-rose-600 hover:text-rose-600
-              ease-in duration-150 border-black rounded-lg mr-3 p-[0.4rem]"
-            />
-            <FiMail
-              className="inline text-4xl border-[3px]
-              hover:-translate-y-1 hover:border-rose-600 hover:text-rose-600
-              ease-in duration-150 border-black rounded-lg mr-3 p-[0.4rem]"
-            />
-            <CgFileDocument
-              className="inline text-4xl border-[3px]
-              hover:-translate-y-1 hover:border-rose-600 hover:text-rose-600
-              ease-in duration-150 border-black rounded-lg mr-3 p-[0.4rem]"
-            />
+            {icons.map((singleIcon) => {
+              return (
+                <>
+                  <a href={singleIcon.link}>
+                    <singleIcon.icon
+                      className="inline text-4xl border-[3px]
+                      hover:-translate-y-1 hover:border-rose-600 hover:text-rose-600
+                      ease-in duration-150 border-black rounded-lg mr-3 p-[0.4rem]"
+                    />
+                  </a>
+                </>
+              );
+            })}
           </div>
           <div className="mt-8 text-sm">
             Designed and Built by Yasoob Khalid Niazi. <br />
@@ -46,14 +55,40 @@ export default function Footer() {
           <div className="text-lg font-semibold text-center">Navigation</div>
           <ul className="grid grid-cols-2 mt-8 justify-items-center">
             <div className="col-span-1">
-              <li className="mt-1">Home</li>
-              <li className="mt-1">About Me</li>
-              <li className="mt-1">Education</li>
+              {sections.slice(0, 3).map((section) => {
+                return (
+                  <>
+                    <a href={section.link} className="">
+                      <li
+                        className="mt-1 hover:-translate-y-1 hover:underline
+                        hover:underline-rose-600 hover:decoration-[3px] 
+                        hover:underline-offset-4 hover:text-rose-600 ease-in 
+                        duration-150 rounded-lg"
+                      >
+                        {section.name}
+                      </li>
+                    </a>
+                  </>
+                );
+              })}
             </div>
             <div className="col-span-1">
-              <li className="mt-1">Experience</li>
-              <li className="mt-1">Personal Projects</li>
-              <li className="mt-1">Contact Me</li>
+              {sections.slice(3, sections.length).map((section) => {
+                return (
+                  <>
+                    <a href={section.link} className="">
+                      <li
+                        className="mt-1 hover:-translate-y-1 hover:underline
+                        hover:underline-rose-600 hover:decoration-[3px] 
+                        hover:underline-offset-4 hover:text-rose-600 ease-in 
+                        duration-150 rounded-lg"
+                      >
+                        {section.name}
+                      </li>
+                    </a>
+                  </>
+                );
+              })}
             </div>
           </ul>
         </div>

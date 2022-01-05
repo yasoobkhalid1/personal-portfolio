@@ -1,6 +1,18 @@
 import Link from "next/link";
+import { useState, useEffect } from "react";
+import { FaRegMoon, FaRegSun } from "react-icons/fa";
 
 export default function NavBar() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode]);
+
   const sections = [
     { name: "Home", link: "#" },
     { name: "About", link: "#About" },
@@ -29,8 +41,14 @@ export default function NavBar() {
   });
 
   return (
-    <div className="my-8 text-lg flex justify-between group tracking-tight">
+    <div className="my-8 text-lg flex justify-between items-end group tracking-tight">
       {links}
+      <button
+        onClick={() => setDarkMode(!darkMode)}
+        className="text-xl border-2 border-black rounded-md p-1"
+      >
+        {darkMode ? <FaRegSun /> : <FaRegMoon />}
+      </button>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Introduction() {
   return (
-    <div className="my-72 text-center font-slab">
+    <div className="my-72 text-center font-slab dark:text-white">
       <div className="">
         <h1 className="tracking-[-0.1em] font-medium drop-shadow-2xl">
           <span className="text-8xl pr-4 leading-normal">Hi. </span>

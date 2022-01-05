@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="mt-56 pt-8" id="About">
+    <div className="mt-56 pt-8 mx-12 lg:mx-0" id="About">
       <div className="grid grid-cols-3 mt-8">
         <div className="col-span-2 mr-24 leading-relaxed ">
           <div
@@ -51,11 +51,12 @@ export default function About() {
         </div>
         <div className="col-span-1 pt-32">
           <div
-            className="w-56 mb-10 relative before:absolute before:top-2 before:left-4
-              before:w-full before:h-full before:bg-slate-200 dark:before:bg-rose-300"
+            className="w-56 mb-10 relative lg:before:absolute lg:before:top-2 
+            lg:before:left-4 lg:before:w-full lg:before:h-full 
+            lg:before:bg-slate-200 dark:lg:before:bg-rose-300"
           >
             <Image
-              className=""
+              className="rounded-md lg:rounded-none"
               src="/images/personal-image.jpg"
               alt="Personal image of Yasoob"
               width={500}

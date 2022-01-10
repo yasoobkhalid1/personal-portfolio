@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { FaRegMoon, FaRegSun } from "react-icons/fa";
+import { FiMenu } from "react-icons/fi";
 
 export default function NavBar() {
   const [darkMode, setDarkMode] = useState(true);
@@ -31,7 +32,7 @@ export default function NavBar() {
           ease-in duration-100 relative before:absolute before:w-0 before:h-1 
           before:-bottom-1 before:left-0 before:bg-rose-500 before:invisible 
           before:transition-all before:delay-100 before:ease-in-out
-          before:hover:visible before:hover:w-full
+          before:hover:visible before:hover:w-full hidden md:flex 
         "
         >
           {section.name}
@@ -42,9 +43,18 @@ export default function NavBar() {
 
   return (
     <div
-      className="py-8 md:px-8 lg:px-0 lg:text-lg flex justify-between items-end group 
+      className="py-8 px-8 lg:px-0 lg:text-lg flex justify-between items-end group 
       tracking-tight dark:text-slate-200"
     >
+      <button
+        className="text-xl cursor-pointer md:hidden block
+        p-1 border-2 border-slate-800 rounded
+        hover:bg-slate-800 hover:text-slate-200 ease-out duration-200
+        dark:border-slate-200  dark:hover:bg-slate-200 
+        dark:hover:text-slate-800 dark:ease-out dark:duration-500"
+      >
+        <FiMenu />
+      </button>
       {links}
       <button
         onClick={() => setDarkMode(!darkMode)}

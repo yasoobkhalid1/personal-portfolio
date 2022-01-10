@@ -40,7 +40,8 @@ export default function ProjectsCard({
       <div
         className="border-4 border-black 
         opacity-60 hover:opacity-100 hover:-translate-y-2 hover:drop-shadow-2xl  
-        duration-150 dark:opacity-80 dark:hover:opacity-100 dark:bg-sky-400"
+        duration-150 bg-slate-100 
+        dark:opacity-80 dark:hover:opacity-100 dark:bg-sky-400"
       >
         <div className="m-4 lg:m-8">
           <div className="flex justify-between items-end">

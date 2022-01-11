@@ -1,12 +1,11 @@
-import Image from "next/image";
-
 export default function Introduction() {
   return (
-    <div className="my-56 lg:my-72 text-center font-slab">
+    <div className="my-32 md:my-56 lg:my-72 text-center font-slab">
       <div className="">
         <h1
           className="tracking-tight font-medium drop-shadow-2xl 
-          dark:text-slate-100 text-7xl lg:text-8xl"
+          dark:text-slate-100 text-6xl md:text-7xl lg:text-8xl
+          leading-normal md:leading-none"
         >
           <span className=" pr-4 leading-normal">Hi. </span>
           <span className="">
@@ -22,8 +21,8 @@ export default function Introduction() {
         </h1>
 
         <div
-          className="text-slate-700 drop-shadow-2xl pt-8 
-          dark:text-slate-200 lg:leading-loose lg:text-xl 
+          className="text-slate-700 drop-shadow-2xl 
+          pt-16 px-8 md:px-0 md:pt-8 dark:text-slate-200 lg:leading-loose lg:text-xl 
           px-30 leading-loose"
         >
           I'm a Full Stack Software Engineer, currently working on{" "}
@@ -43,15 +42,17 @@ export default function Introduction() {
             Google
           </span>
           .
-          <br />I love to read and have recently gotten into{" "}
-          <span
-            className="underline underline-offset-4 decoration-[3px] 
+          <div className="pt-8 md:pt-0">
+            I love to read and have recently gotten into{" "}
+            <span
+              className="underline underline-offset-4 decoration-[3px] 
           font-medium decoration-green-500 dark:underline-offset-[6px]
           dark:font-normal"
-          >
-            writing
-          </span>{" "}
-          about cool stuff that interests me.
+            >
+              writing
+            </span>{" "}
+            about cool stuff that interests me.
+          </div>
         </div>
         <div className="flex justify-evenly">
           <a

@@ -15,7 +15,7 @@ export default function Home() {
   const components = [
     { component: NavBar, threshold: 0.25, initialOpacity: 1 },
     { component: Introduction, threshold: 0.25, initialOpacity: 1 },
-    { component: About, threshold: 0.5, initialOpacity: 0 },
+    { component: About, threshold: 0.25, initialOpacity: 0 },
     { component: Education, threshold: 0.25, initialOpacity: 0 },
     { component: Experience, threshold: 0.25, initialOpacity: 0 },
     { component: Projects, threshold: 0.25, initialOpacity: 0 },

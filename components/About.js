@@ -2,9 +2,20 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="mt-56 pt-8 mx-12 lg:mx-0" id="About">
-      <div className="grid grid-cols-3 mt-8">
-        <div className="col-span-2 mr-24 leading-relaxed ">
+    <div className="mt-56 mx-12 lg:mx-0" id="About">
+      <div className="flex justify-center md:hidden mb-12">
+        <div className="w-56 mb-10">
+          <Image
+            className=""
+            src="/images/personal-image.jpg"
+            alt="Personal image of Yasoob"
+            width={500}
+            height={500}
+          />
+        </div>
+      </div>
+      <div className="md:grid md:grid-cols-3">
+        <div className="text-justify md:col-span-2 md:mr-24 leading-relaxed ">
           <div
             className="pb-2 text-center mb-8 border-b-4 border-black
             dark:border-rose-500 dark:text-slate-900"
@@ -34,13 +45,13 @@ export default function About() {
           <p className="mb-6 dark:text-slate-200 text-lg">
             Here are some of the technologies I've been working with recently:
           </p>
-          <ul className="grid grid-cols-2 dark:text-slate-200">
-            <div className="col-span-1">
+          <ul className="md:grid md:grid-cols-2 dark:text-slate-200">
+            <div className="md:col-span-1">
               <li className="before:content-['>'] before:mr-5">JavaScript</li>
               <li className="before:content-['>'] before:mr-5">React</li>
               <li className="before:content-['>'] before:mr-5">Bootstrap</li>
             </div>
-            <div className="col-span-1">
+            <div className="md:col-span-1">
               <li className="before:content-['>'] before:mr-5">
                 SQL (Postgres)
               </li>
@@ -49,14 +60,14 @@ export default function About() {
             </div>
           </ul>
         </div>
-        <div className="col-span-1 pt-32">
+        <div className="md:col-span-1 pt-32 hidden md:block">
           <div
             className="w-56 mb-10 relative lg:before:absolute lg:before:top-2 
             lg:before:left-4 lg:before:w-full lg:before:h-full 
             lg:before:bg-slate-200 dark:lg:before:bg-rose-300"
           >
             <Image
-              className="rounded-md lg:rounded-none"
+              className="md:rounded-md lg:rounded-none"
               src="/images/personal-image.jpg"
               alt="Personal image of Yasoob"
               width={500}

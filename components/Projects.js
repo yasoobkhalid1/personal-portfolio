@@ -123,20 +123,20 @@ export default function Projects() {
   };
 
   return (
-    <div className="mt-48 pt-12 mx-12 lg:mx-0" id="Projects">
+    <div className="mt-32 md:mt-48 pt-12 mx-12 lg:mx-0" id="Projects">
       <div
         className="text-center border-b-4 border-black
         dark:border-sky-400"
       >
         <div
-          className="tracking-tight drop-shadow-2xl text-3xl
+          className="tracking-tight drop-shadow-2xl text-2xl md:text-3xl
               font-semibold bg-sky-400 p-2 px-4 inline-block mb-8"
           id="projects"
         >
           Personal Projects
         </div>
       </div>
-      <div className="mt-16 flex flex-wrap justify-center gap-4 lg:gap-8">
+      <div className="mt-16 md:flex md:flex-wrap md:justify-center md:gap-4 lg:gap-8">
         {projects.map((project) => {
           const { isVisible, ...otherProps } = { ...project };
           return (

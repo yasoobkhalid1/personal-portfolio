@@ -38,21 +38,21 @@ export default function ProjectsCard({
       }`}
     >
       <div
-        className="border-4 border-black 
+        className="mb-8 md:mb-0 border-4 border-black 
         opacity-60 hover:opacity-100 hover:-translate-y-2 hover:drop-shadow-2xl  
         duration-150 bg-slate-100 
         dark:opacity-80 dark:hover:opacity-100 dark:bg-sky-400"
       >
         <div className="m-4 lg:m-8">
           <div className="flex justify-between items-end">
-            <div className="text-4xl lg:text-6xl">{logo}</div>
+            <div className="text-3xl md:text-4xl lg:text-6xl">{logo}</div>
             <div className="">
               {hasGithub ? githubIcon : null}
               {hasWebsite ? websiteIcon : null}
             </div>
           </div>
           <div className="mt-6">
-            <div className="font-semibold lg:text-lg">{title}</div>
+            <div className="font-semibold  lg:text-lg">{title}</div>
             <div
               className="flex justify-start items-center 
               gap-4 mt-4 text-sm lg:text-base"

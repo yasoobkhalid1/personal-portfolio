@@ -17,8 +17,8 @@ export default function Home() {
     { component: Introduction, threshold: 0.25, initialOpacity: 1 },
     { component: About, threshold: 0.25, initialOpacity: 0 },
     { component: Education, threshold: 0.25, initialOpacity: 0 },
-    { component: Experience, threshold: 0.25, initialOpacity: 0 },
-    { component: Projects, threshold: 0.25, initialOpacity: 0 },
+    { component: Experience, threshold: 0.1, initialOpacity: 0 },
+    { component: Projects, threshold: 0.1, initialOpacity: 0 },
     { component: Contact, threshold: 0.25, initialOpacity: 0 },
     { component: Footer, threshold: 0.25, initialOpacity: 0 },
   ];

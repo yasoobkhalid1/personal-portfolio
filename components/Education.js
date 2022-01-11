@@ -2,19 +2,22 @@ import Image from "next/image";
 
 export default function Education() {
   return (
-    <div className="mt-48 pt-8 mx-12 lg:mx-0" id="Education">
-      <div className="grid grid-cols-3 mt-8">
-        <div className="col-span-1 pt-56 lg:pt-32">
+    <div className="mt-32 md:mt-48 pt-8 mx-12 lg:mx-0" id="Education">
+      <div className="md:grid md:grid-cols-3 mt-8">
+        <div
+          className="md:col-span-1 md:pt-56 lg:pt-32 
+          flex justify-center md:block mb-12 md:mb-0"
+        >
           <div className="w-36 lg:w-48 drop-shadow-xl dark:hidden">
             <Image
               className=""
               src="/images/uni-illustration.svg"
-              alt="Dark Logo of UC Berkeley"
+              alt="Light Logo of UC Berkeley"
               width={500}
               height={500}
             />
           </div>
-          <div className="w-48 drop-shadow-xl hidden dark:block">
+          <div className="w-36 drop-shadow-xl hidden dark:block">
             <Image
               className=""
               src="/images/uni-dark-illustration.svg"
@@ -24,7 +27,7 @@ export default function Education() {
             />
           </div>
         </div>
-        <div className="col-span-2 leading-relaxed ">
+        <div className="md:col-span-2 leading-relaxed text-justify">
           <div
             className="pb-2 text-center mb-8 border-b-4 border-black
             dark:border-amber-500"

@@ -10,6 +10,7 @@ export default function ProjectsCard({
   title,
   description,
   skills,
+  index,
 }) {
   const githubIcon = (
     <a href={githubLink} target="_blank">
@@ -36,10 +37,11 @@ export default function ProjectsCard({
           ? "opacity-100 transition-opacity duration-500 ease-in"
           : "absolute overflow-hidden h-0 opacity-0 "
       }`}
+      key={index}
     >
       <div
         className="mb-8 md:mb-0 border-4 border-black 
-        opacity-60 hover:opacity-100 hover:-translate-y-2 hover:drop-shadow-2xl  
+        lg:opacity-60 hover:opacity-100 hover:-translate-y-2 hover:drop-shadow-2xl  
         duration-150 bg-slate-100 
         dark:opacity-80 dark:hover:opacity-100 dark:bg-sky-400"
       >
@@ -57,8 +59,12 @@ export default function ProjectsCard({
               className="flex justify-start items-center 
               gap-4 mt-4 text-sm lg:text-base"
             >
-              {skills.map((skill) => {
-                return <div className="">{skill}</div>;
+              {skills.map((skill, index) => {
+                return (
+                  <div className="" key={index}>
+                    {skill}
+                  </div>
+                );
               })}
             </div>
           </div>

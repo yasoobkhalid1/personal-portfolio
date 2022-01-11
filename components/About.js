@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <div className="mt-56 pt-8 mx-12 lg:mx-0" id="About">
-      <div className="flex justify-center md:hidden mb-12 md:mb-">
+      <div className="flex justify-center md:hidden mb-12">
         <div className="w-56 mb-10">
           <Image
             className="rounded-md"
@@ -15,7 +15,7 @@ export default function About() {
         </div>
       </div>
       <div className="md:grid md:grid-cols-3 mt-8">
-        <div className="text-justify md:col-span-2 md:mr-24 leading-relaxed ">
+        <div className="md:col-span-2 md:mr-24 leading-relaxed ">
           <div
             className="pb-2 text-center mb-8 border-b-4 border-black
             dark:border-rose-500 dark:text-slate-900"

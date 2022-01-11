@@ -26,16 +26,15 @@ export default function NavBar() {
     { name: "Resume", link: "/documents/Resume.pdf" },
     { name: "Blog", link: "https://blog.yasoobk.com" },
   ];
-  const links = sections.map((section) => {
+  const links = sections.map((section, index) => {
     return (
       <Link href={section.link}>
         <a
-          className="group-hover:opacity-50 group-hover:hover:opacity-100 
-          ease-in duration-100 relative before:absolute before:w-0 before:h-1 
+          className="relative before:absolute before:w-0 before:h-1 
           before:-bottom-1 before:left-0 before:bg-rose-500 before:invisible 
           before:transition-all before:delay-100 before:ease-in-out
-          before:hover:visible before:hover:w-full flex
-        "
+          before:hover:visible before:hover:w-full flex"
+          key={index}
         >
           {section.name}
         </a>
@@ -43,9 +42,12 @@ export default function NavBar() {
     );
   });
 
-  const mobileLinks = sections.map((section) => {
+  const mobileLinks = sections.map((section, index) => {
     return (
-      <div className={"justify-center" + (navbarOpened ? " flex" : " hidden")}>
+      <div
+        className={"justify-center" + (navbarOpened ? " flex" : " hidden")}
+        key={index}
+      >
         <Link href={section.link}>
           <a className="py-2">{section.name}</a>
         </Link>
@@ -67,7 +69,10 @@ export default function NavBar() {
     <button
       onClick={() => setDarkMode(!darkMode)}
       className="text-xl p-1 border-2 border-slate-800 rounded
-        dark:border-slate-200 "
+      hover:bg-slate-800 hover:text-slate-200 ease-out duration-200
+      dark:border-slate-200  dark:hover:bg-slate-200 
+      dark:hover:text-slate-800 dark:ease-out dark:duration-500
+      "
     >
       {darkMode ? <FaRegSun /> : <FaRegMoon />}
     </button>

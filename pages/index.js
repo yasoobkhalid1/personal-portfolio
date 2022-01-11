@@ -90,7 +90,7 @@ export default function Home() {
         ease-out duration-300 font-mono"
       >
         <div className="max-w-3xl lg:max-w-4xl mx-auto">
-          {components.map((singleComponent) => {
+          {components.map((singleComponent, index) => {
             return (
               <InView threshold={singleComponent.threshold}>
                 {({ ref, inView }) => (
@@ -103,6 +103,7 @@ export default function Home() {
                         : { opacity: singleComponent.initialOpacity }
                     }
                     transition={{ duration: 0.8 }}
+                    key={index}
                   >
                     <singleComponent.component />
                   </motion.div>

@@ -27,7 +27,7 @@ export default function Education() {
             />
           </div>
         </div>
-        <div className="md:col-span-2 leading-relaxed text-justify">
+        <div className="md:col-span-2 leading-relaxed">
           <div
             className="pb-2 text-center mb-8 border-b-4 border-black
             dark:border-amber-500"

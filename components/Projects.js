@@ -137,10 +137,14 @@ export default function Projects() {
         </div>
       </div>
       <div className="mt-16 md:flex md:flex-wrap md:justify-center md:gap-4 lg:gap-8">
-        {projects.map((project) => {
+        {projects.map((project, index) => {
           const { isVisible, ...otherProps } = { ...project };
           return (
-            <ProjectsCard {...otherProps} isVisible={isVisible || expanded} />
+            <ProjectsCard
+              {...otherProps}
+              isVisible={isVisible || expanded}
+              index={index}
+            />
           );
         })}
       </div>

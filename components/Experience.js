@@ -53,8 +53,8 @@ export default function Experience() {
           Experience
         </div>
       </div>
-      {experiences.map((experience) => {
-        return <SingleExperienceSection {...experience} />;
+      {experiences.map((experience, index) => {
+        return <SingleExperienceSection {...experience} index={index} />;
       })}
     </div>
   );

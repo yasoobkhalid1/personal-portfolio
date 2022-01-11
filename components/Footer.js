@@ -32,10 +32,10 @@ export default function Footer() {
           </div>
           <ul className="grid grid-cols-2 mt-8 mb-24 text-xs justify-items-center">
             <div className="col-span-1">
-              {sections.slice(0, 3).map((section) => {
+              {sections.slice(0, 3).map((section, index) => {
                 return (
                   <>
-                    <a href={section.link} className="">
+                    <a href={section.link} className="" key={index}>
                       <li className="mt-1">{section.name}</li>
                     </a>
                   </>
@@ -43,10 +43,10 @@ export default function Footer() {
               })}
             </div>
             <div className="col-span-1">
-              {sections.slice(3, sections.length).map((section) => {
+              {sections.slice(3, sections.length).map((section, index) => {
                 return (
                   <>
-                    <a href={section.link} className="">
+                    <a href={section.link} className="" key={index}>
                       <li className="mt-1">{section.name}</li>
                     </a>
                   </>
@@ -64,10 +64,10 @@ export default function Footer() {
             Yasoob Khalid Niazi
           </div>
           <div className="mt-12 md:mt-6">
-            {icons.map((singleIcon) => {
+            {icons.map((singleIcon, index) => {
               return (
                 <>
-                  <a href={singleIcon.link}>
+                  <a href={singleIcon.link} key={index}>
                     <singleIcon.icon
                       className="inline text-4xl border-[3px]
                       hover:-translate-y-1 hover:border-rose-600 hover:text-rose-600
@@ -97,15 +97,15 @@ export default function Footer() {
           </div>
           <ul className="grid grid-cols-2 mt-8 justify-items-center">
             <div className="col-span-1">
-              {sections.slice(0, 3).map((section) => {
+              {sections.slice(0, 3).map((section, index) => {
                 return (
                   <>
-                    <a href={section.link} className="">
+                    <a href={section.link} className="" key={index}>
                       <li
                         className="mt-1 hover:-translate-y-1 hover:underline
                         hover:underline-rose-600 hover:decoration-[3px] 
                         hover:underline-offset-[6px] hover:text-rose-600 ease-in 
-                        duration-150 rounded-lg "
+                        duration-150 rounded-lg"
                       >
                         {section.name}
                       </li>
@@ -115,10 +115,10 @@ export default function Footer() {
               })}
             </div>
             <div className="col-span-1">
-              {sections.slice(3, sections.length).map((section) => {
+              {sections.slice(3, sections.length).map((section, index) => {
                 return (
                   <>
-                    <a href={section.link} className="">
+                    <a href={section.link} className="" key={index}>
                       <li
                         className="mt-1 hover:-translate-y-1 hover:underline
                         hover:underline-rose-600 hover:decoration-[3px] 

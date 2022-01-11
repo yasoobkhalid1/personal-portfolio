@@ -24,7 +24,7 @@ This was the first project I worked on that used Tailwind CSS for its styling fr
 
 Moreover, I also appreciated some of the smaller QoL improvements Tailwind CSS provided, such as removing the need to create arbitrary class names for element selection, allowing me to work in a single HTML file while styling each component individually without the need to constantly switch back-and-forth with another file, and many other such benefits.
 
-### Varcel
+<!-- ### Varcel
 
 ## Implementation
 
@@ -46,11 +46,4 @@ One of the first task I worked on for my website was creating and implementing a
 
 To simplify this process, I ended up using this [Favicon Generator](https://realfavicongenerator.net/) which made it extremely easy to upload my image and have all the custom configurations generated automatically that I could store in my `public` folder and paste their `link` elements in the `head` of my main `index.js` file.
 
-By doing the above, I made sure my favicon was correctly configured for all modern browser sizes, Windows tile icons, mobile browsers in both the iOS and Android ecosystems, etc.
-
-## Future Features
-
-- Stylize navbar
-- Add scroll animations to entire website
-- Add contact me button in intro
-- Add particle animation
+By doing the above, I made sure my favicon was correctly configured for all modern browser sizes, Windows tile icons, mobile browsers in both the iOS and Android ecosystems, etc. -->

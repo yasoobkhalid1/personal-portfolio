@@ -53,8 +53,13 @@ export default function Experience() {
           Experience
         </div>
       </div>
-      {experiences.map((experience, index) => {
-        return <SingleExperienceSection {...experience} index={index} />;
+      {experiences.map((experience) => {
+        return (
+          <SingleExperienceSection
+            {...experience}
+            key={`${experience.company} ${experience.occupation}`}
+          />
+        );
       })}
     </div>
   );

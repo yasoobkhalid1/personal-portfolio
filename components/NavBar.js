@@ -26,15 +26,14 @@ export default function NavBar() {
     { name: "Resume", link: "/documents/Resume.pdf" },
     { name: "Blog", link: "https://blog.yasoobk.com" },
   ];
-  const links = sections.map((section, index) => {
+  const links = sections.map((section) => {
     return (
-      <Link href={section.link}>
+      <Link href={section.link} key={section.name}>
         <a
           className="relative before:absolute before:w-0 before:h-1 
           before:-bottom-1 before:left-0 before:bg-rose-500 before:invisible 
           before:transition-all before:delay-100 before:ease-in-out
           before:hover:visible before:hover:w-full flex"
-          key={index}
         >
           {section.name}
         </a>
@@ -46,7 +45,7 @@ export default function NavBar() {
     return (
       <div
         className={"justify-center" + (navbarOpened ? " flex" : " hidden")}
-        key={index}
+        key={section.name}
       >
         <Link href={section.link}>
           <a className="py-2">{section.name}</a>

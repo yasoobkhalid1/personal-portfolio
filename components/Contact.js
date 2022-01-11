@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Contact() {
   return (
     <div className="mt-32 md:mt-48 pt-12 mx-12 lg:mx-0" id="Contact">

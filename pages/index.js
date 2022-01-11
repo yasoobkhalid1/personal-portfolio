@@ -13,14 +13,34 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   const components = [
-    { component: NavBar, threshold: 0.25, initialOpacity: 1 },
-    { component: Introduction, threshold: 0.25, initialOpacity: 1 },
-    { component: About, threshold: 0.25, initialOpacity: 0 },
-    { component: Education, threshold: 0.25, initialOpacity: 0 },
-    { component: Experience, threshold: 0.1, initialOpacity: 0 },
-    { component: Projects, threshold: 0.1, initialOpacity: 0 },
-    { component: Contact, threshold: 0.25, initialOpacity: 0 },
-    { component: Footer, threshold: 0.25, initialOpacity: 0 },
+    { name: "NavBar", component: NavBar, threshold: 0.25, initialOpacity: 1 },
+    {
+      name: "Introduction",
+      component: Introduction,
+      threshold: 0.25,
+      initialOpacity: 1,
+    },
+    { name: "About", component: About, threshold: 0.25, initialOpacity: 0 },
+    {
+      name: "Education",
+      component: Education,
+      threshold: 0.25,
+      initialOpacity: 0,
+    },
+    {
+      name: "Experience",
+      component: Experience,
+      threshold: 0.1,
+      initialOpacity: 0,
+    },
+    {
+      name: "Projects",
+      component: Projects,
+      threshold: 0.1,
+      initialOpacity: 0,
+    },
+    { name: "Contact", component: Contact, threshold: 0.25, initialOpacity: 0 },
+    { name: "Footer", component: Footer, threshold: 0.25, initialOpacity: 0 },
   ];
 
   return (
@@ -90,9 +110,12 @@ export default function Home() {
         ease-out duration-300 font-mono"
       >
         <div className="max-w-3xl lg:max-w-4xl mx-auto">
-          {components.map((singleComponent, index) => {
+          {components.map((singleComponent) => {
             return (
-              <InView threshold={singleComponent.threshold}>
+              <InView
+                threshold={singleComponent.threshold}
+                key={singleComponent.name}
+              >
                 {({ ref, inView }) => (
                   <motion.div
                     ref={ref}
@@ -103,7 +126,6 @@ export default function Home() {
                         : { opacity: singleComponent.initialOpacity }
                     }
                     transition={{ duration: 0.8 }}
-                    key={index}
                   >
                     <singleComponent.component />
                   </motion.div>

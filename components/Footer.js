@@ -1,13 +1,18 @@
 import { FiGithub, FiMail } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
+import { Fragment } from "react";
 
 export default function Footer() {
   const icons = [
-    { icon: FiGithub, link: "https://github.com" },
-    { icon: FaLinkedinIn, link: "https://linkedin.com" },
-    { icon: FiMail, link: "mailto:yasoobkhalid1@gmail.com" },
-    { icon: CgFileDocument, link: "/documents/Resume.pdf" },
+    { name: "FiGithub", icon: FiGithub, link: "https://github.com" },
+    { name: "FaLinkedinIn", icon: FaLinkedinIn, link: "https://linkedin.com" },
+    { name: "FiMail", icon: FiMail, link: "mailto:yasoobkhalid1@gmail.com" },
+    {
+      name: "CgFileDocument",
+      icon: CgFileDocument,
+      link: "/documents/Resume.pdf",
+    },
   ];
 
   const sections = [
@@ -32,24 +37,24 @@ export default function Footer() {
           </div>
           <ul className="grid grid-cols-2 mt-8 mb-24 text-xs justify-items-center">
             <div className="col-span-1">
-              {sections.slice(0, 3).map((section, index) => {
+              {sections.slice(0, 3).map((section) => {
                 return (
-                  <>
-                    <a href={section.link} className="" key={index}>
+                  <Fragment key={section.name}>
+                    <a href={section.link} className="">
                       <li className="mt-1">{section.name}</li>
                     </a>
-                  </>
+                  </Fragment>
                 );
               })}
             </div>
             <div className="col-span-1">
-              {sections.slice(3, sections.length).map((section, index) => {
+              {sections.slice(3, sections.length).map((section) => {
                 return (
-                  <>
-                    <a href={section.link} className="" key={index}>
+                  <Fragment key={section.name}>
+                    <a href={section.link} className="">
                       <li className="mt-1">{section.name}</li>
                     </a>
-                  </>
+                  </Fragment>
                 );
               })}
             </div>
@@ -64,10 +69,10 @@ export default function Footer() {
             Yasoob Khalid Niazi
           </div>
           <div className="mt-12 md:mt-6">
-            {icons.map((singleIcon, index) => {
+            {icons.map((singleIcon) => {
               return (
-                <>
-                  <a href={singleIcon.link} key={index}>
+                <Fragment key={singleIcon.name}>
+                  <a href={singleIcon.link}>
                     <singleIcon.icon
                       className="inline text-4xl border-[3px]
                       hover:-translate-y-1 hover:border-rose-600 hover:text-rose-600
@@ -76,7 +81,7 @@ export default function Footer() {
                       dark:hover:text-rose-600"
                     />
                   </a>
-                </>
+                </Fragment>
               );
             })}
           </div>
@@ -97,10 +102,10 @@ export default function Footer() {
           </div>
           <ul className="grid grid-cols-2 mt-8 justify-items-center">
             <div className="col-span-1">
-              {sections.slice(0, 3).map((section, index) => {
+              {sections.slice(0, 3).map((section) => {
                 return (
-                  <>
-                    <a href={section.link} className="" key={index}>
+                  <Fragment key={section.name}>
+                    <a href={section.link} className="">
                       <li
                         className="mt-1 hover:-translate-y-1 hover:underline
                         hover:underline-rose-600 hover:decoration-[3px] 
@@ -110,15 +115,15 @@ export default function Footer() {
                         {section.name}
                       </li>
                     </a>
-                  </>
+                  </Fragment>
                 );
               })}
             </div>
             <div className="col-span-1">
-              {sections.slice(3, sections.length).map((section, index) => {
+              {sections.slice(3, sections.length).map((section) => {
                 return (
-                  <>
-                    <a href={section.link} className="" key={index}>
+                  <Fragment key={section.name}>
+                    <a href={section.link} className="">
                       <li
                         className="mt-1 hover:-translate-y-1 hover:underline
                         hover:underline-rose-600 hover:decoration-[3px] 
@@ -128,7 +133,7 @@ export default function Footer() {
                         {section.name}
                       </li>
                     </a>
-                  </>
+                  </Fragment>
                 );
               })}
             </div>

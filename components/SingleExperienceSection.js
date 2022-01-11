@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React, { Fragment } from "react";
 
 export default function SingleExperienceSection({
   imgPath,
@@ -7,10 +8,9 @@ export default function SingleExperienceSection({
   company,
   duration,
   jobDescriptions,
-  index,
 }) {
   return (
-    <div className="md:grid md:grid-cols-4 lg:grid-cols-3 mt-16" key={index}>
+    <div className="md:grid md:grid-cols-4 lg:grid-cols-3 mt-16">
       <div className="md:col-span-1 flex justify-center md:block">
         <div
           className="drop-shadow-xl p-4 md:mr-8 lg:m-12 
@@ -46,14 +46,14 @@ export default function SingleExperienceSection({
           {duration}
         </p>
         <ul className="grid grid-cols-12">
-          {jobDescriptions.map((jobDescription, index) => {
+          {jobDescriptions.map((jobDescription) => {
             return (
-              <>
+              <Fragment key={jobDescription}>
                 <li className="col-span-1">{">"}</li>
-                <li className="col-span-11 mb-4 md:text-left" key={index}>
+                <li className="col-span-11 mb-4 md:text-left">
                   {jobDescription}
                 </li>
-              </>
+              </Fragment>
             );
           })}
         </ul>

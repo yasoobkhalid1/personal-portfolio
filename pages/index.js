@@ -13,34 +13,62 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   const components = [
-    { name: "NavBar", component: NavBar, threshold: 0.25, initialOpacity: 1 },
+    {
+      name: "NavBar",
+      component: NavBar,
+      threshold: 0.25,
+      initialOpacity: 1,
+      translateX: 0,
+    },
     {
       name: "Introduction",
       component: Introduction,
       threshold: 0.25,
       initialOpacity: 1,
+      translateX: 0,
     },
-    { name: "About", component: About, threshold: 0.25, initialOpacity: 0 },
+    {
+      name: "About",
+      component: About,
+      threshold: 0.25,
+      initialOpacity: 0,
+      translateX: 75,
+    },
     {
       name: "Education",
       component: Education,
       threshold: 0.25,
       initialOpacity: 0,
+      translateX: -75,
     },
     {
       name: "Experience",
       component: Experience,
       threshold: 0.1,
       initialOpacity: 0,
+      translateX: 75,
     },
     {
       name: "Projects",
       component: Projects,
       threshold: 0.1,
       initialOpacity: 0,
+      translateX: -75,
     },
-    { name: "Contact", component: Contact, threshold: 0.25, initialOpacity: 0 },
-    { name: "Footer", component: Footer, threshold: 0.25, initialOpacity: 0 },
+    {
+      name: "Contact",
+      component: Contact,
+      threshold: 0.25,
+      initialOpacity: 0,
+      translateX: 75,
+    },
+    {
+      name: "Footer",
+      component: Footer,
+      threshold: 0.25,
+      initialOpacity: 0,
+      translateX: 0,
+    },
   ];
 
   return (
@@ -119,6 +147,7 @@ export default function Home() {
               <InView
                 threshold={singleComponent.threshold}
                 key={singleComponent.name}
+                triggerOnce
               >
                 {({ ref, inView }) => (
                   <motion.div
@@ -126,8 +155,13 @@ export default function Home() {
                     initial={{ opacity: singleComponent.initialOpacity }}
                     animate={
                       inView
-                        ? { opacity: 1 }
-                        : { opacity: singleComponent.initialOpacity }
+                        ? {
+                            opacity: 1,
+                          }
+                        : {
+                            opacity: singleComponent.initialOpacity,
+                            x: singleComponent.translateX,
+                          }
                     }
                     transition={{ duration: 0.8 }}
                   >

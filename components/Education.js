@@ -55,14 +55,7 @@ export default function Education() {
             >
               UC Berkeley
             </span>{" "}
-            (Class of 2022) with a{" "}
-            <span
-              className="text-orange-500 font-semibold 
-              dark:text-orange-400"
-            >
-              3.85 GPA
-            </span>
-            .
+            (Class of 2022).
           </p>
           <p className="mb-6 dark:text-slate-200 text-lg">
             At Berkeley, I had the privilege of being part of the{" "}
